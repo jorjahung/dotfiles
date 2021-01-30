@@ -4,7 +4,6 @@
 
 fortune | cowsay | lolcat
 
-
 # prompt
 
 [ "$PS1" ] && {
@@ -74,3 +73,5 @@ alias master="git co master"
 alias gm="git co master"
 alias gcm="git co master"
 alias gbr='git co $(git branch -a --no-color | fzf)' # fuzzy find branch
+
+export EDITOR=mine
