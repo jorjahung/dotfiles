@@ -14,3 +14,5 @@ brew "cdargs"
 # show directories in tree format
 brew "tree"
 
+# fuzzy finder
+brew "fzf"
