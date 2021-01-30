@@ -58,12 +58,14 @@ RED="\[\033[0;31m\]"
 PS1="$RED\$(toon) ${PS1}"
 
 # Aliases
-
+# ruby aliases
 alias bi="bundle install"
 alias be="bundle exec"
 alias br="bundle exec rspec"
 alias bers="bundle exec rails s"
 alias berc="bundle exec rails c"
+
+# git aliases
 alias gpf="git pull && git fetch"
 alias gstat="git status"
 alias gmom="gpf && git merge origin/master"
@@ -71,3 +73,4 @@ alias gco="git co"
 alias master="git co master"
 alias gm="git co master"
 alias gcm="git co master"
+alias gbr='git co $(git branch -a --no-color | fzf)' # fuzzy find branch
